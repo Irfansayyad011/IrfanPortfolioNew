@@ -1,64 +1,93 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chaitanya Bhorde | Portfolio</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irfan Sayyad | Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Irfan Sayyad — Full-Stack Developer, DSA Enthusiast, and MERN Stack Developer. Explore projects, skills, and achievements.">
+  <meta name="keywords" content="Irfan Sayyad, Full-Stack Developer, MERN Stack, Portfolio, Web Developer, DSA">
+  <meta name="author" content="Irfan Sayyad">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="logo">Chaitanya Bhorde</div>
-  <ul class="nav-links">
-    <li><a href="#home" class="active">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<div class="sections-container">
-
-  
-  <section id="home" class="home-section">
-    <h1>Hi, I'm Chaitanya Bhorde</h1>
-    <p class="typing"><span id="typed-text"></span><span class="cursor">|</span></p>
-
-    <div class="home-buttons">
-      <a href="#projects" class="btn">See My Projects</a>
-      <a href="#contact" class="btn">Contact Me</a>
-     
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>IS<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="home-image">
-      <img src="chaitanya.png" alt="Chaitanya Bhorde smiling portrait" loading="lazy">
+  <!-- ===== HERO / HOME ===== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1>Irfan Sayyad</h1>
+        <p class="typing"><span id="typed-text"></span><span class="cursor">|</span></p>
+        <div class="home-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i> See My Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-ring"></div>
+        <img src="irfan.jpg" alt="Irfan Sayyad portrait" loading="lazy">
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fa-solid fa-chevron-down"></i>
     </div>
   </section>
 
-  
-  <section id="about" class="about-section">
-    <h2>About Me</h2>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <h2 class="section-title"><i class="fa-solid fa-user"></i> About Me</h2>
     <div class="about-cards">
-      <div class="about-card">
+      <div class="about-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-id-badge"></i></div>
         <h3>Who I Am</h3>
-        <p>Hi, I'm <span class="highlight">Chaitanya Bhorde</span>, a passionate <span class="highlight">Full-Stack Developer</span> and <span class="highlight">DSA Enthusiast</span> building dynamic web applications with the <span class="highlight">MERN Stack</span>.</p>
+        <p>Hi, I'm <span class="highlight">Irfan Sayyad</span>, a passionate <span class="highlight">Full-Stack Developer</span> and <span class="highlight">DSA Enthusiast</span> building dynamic web applications with the <span class="highlight">MERN Stack</span>.</p>
       </div>
-      <div class="about-card">
+      <div class="about-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
         <h3>What I Do</h3>
         <p>Skilled in <span class="highlight">C++, Java, Python, JavaScript, HTML, CSS</span> and frameworks like <span class="highlight">Node.js, Express.js, MongoDB, MySQL, React, Tailwind CSS</span>. Focus on clean code, responsive designs, and efficient solutions.</p>
       </div>
-      <div class="about-card">
+      <div class="about-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
         <h3>Education</h3>
         <p>
-          <strong>B.E. Information Technology</strong> - PES Modern College of Engineering, Pune | CGPA: 8.32<br>
-          <strong>HSC (12th)</strong> - S.M.V.N. Nhavare, Pune | 76%
+          <strong>B.E. Information Technology</strong> - PES Modern College of Engineering, Pune | CGPA: 7.50<br>
+          <strong>HSC (12th)</strong> - Disha Jr. College | 65%
         </p>
       </div>
-      <div class="about-card">
+      <div class="about-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
         <h3>Experience</h3>
         <p>
           Hands-on experience through projects:<br>
@@ -70,18 +99,20 @@
     </div>
   </section>
 
-  
-  <section id="skills" class="skills-section">
-    <h2>Skills</h2>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <h2 class="section-title"><i class="fa-solid fa-code"></i> Skills</h2>
     <div class="skills-container">
-      <div class="skill-card">
+      <div class="skill-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-language"></i></div>
         <h3>Languages</h3>
         <div class="badges">
           <span>C++</span><span>C</span><span>HTML</span><span>CSS</span>
           <span>JavaScript</span><span>Java</span><span>Python</span>
         </div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-server"></i></div>
         <h3>Technologies</h3>
         <div class="badges">
           <span>Node.js</span><span>Express.js</span><span>REST APIs</span>
@@ -89,7 +120,8 @@
           <span>Bootstrap</span><span>Tailwind CSS</span>
         </div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-toolbox"></i></div>
         <h3>Tools</h3>
         <div class="badges">
           <span>Git</span><span>GitHub</span><span>Cloudinary</span>
@@ -101,66 +133,120 @@
     </div>
   </section>
 
-  
-  <section id="projects" class="projects-section">
-    <h2>Projects</h2>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> Projects</h2>
     <div class="projects-container">
-      <div class="project-card">
-        <h3>Landing Page</h3>
+      <div class="project-card glass-card">
+        <div class="project-number">01</div>
+        <h3><i class="fa-solid fa-globe"></i> Landing Page</h3>
         <p>Modern landing page project.</p>
-        <a href="https://chaitanya-bhorde.github.io/PRODIGY_WD_01/" class="btn" target="_blank">Live Demo</a>
+        <a href="https://irfansayyad011.github.io/Landing-Page/" class="btn btn-primary" target="_blank">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+        </a>
       </div>
-      <div class="project-card">
-        <h3>Stopwatch</h3>
+      <div class="project-card glass-card">
+        <div class="project-number">02</div>
+        <h3><i class="fa-solid fa-stopwatch"></i> Stopwatch</h3>
         <p>Interactive stopwatch web app.</p>
-        <a href="https://chaitanya-bhorde.github.io/PRODIGY_WD_02/" class="btn" target="_blank">Live Demo</a>
+        <a href="https://irfansayyad011.github.io/StopWatch/" class="btn btn-primary" target="_blank">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+        </a>
       </div>
-      <div class="project-card">
-        <h3>Tic Tac Toe</h3>
+      <div class="project-card glass-card">
+        <div class="project-number">03</div>
+        <h3><i class="fa-solid fa-gamepad"></i> Tic Tac Toe</h3>
         <p>Classic Tic Tac Toe game in browser.</p>
-        <a href="https://chaitanya-bhorde.github.io/PRODIGY_WD_03/" class="btn" target="_blank">Live Demo</a>
+        <a href="https://irfansayyad011.github.io/Tic-tac-toe/" class="btn btn-primary" target="_blank">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+        </a>
+      </div>
+      <div class="project-card glass-card">
+        <div class="project-number">04</div>
+        <h3><i class="fa-solid fa-cloud-sun"></i> Live Weather</h3>
+        <p>Weather API</p>
+        <a href="https://irfansayyad011.github.io/Weather-App/" class="btn btn-primary" target="_blank">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+        </a>
       </div>
     </div>
   </section>
 
-  
-  <section id="achievements" class="achievements-section">
-    <h2>Achievements</h2>
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements">
+    <h2 class="section-title"><i class="fa-solid fa-trophy"></i> Achievements</h2>
     <div class="achievements-container">
-      <div class="achievement-card">LeetCode 50 & 100-Day Badges</div>
-      <div class="achievement-card">MERN Stack Completed</div>
-      <div class="achievement-card">Games of Codes Certificate PES MCOE</div>
-      <div class="achievement-card">Completed DSA in C++</div>
-    </div>
+      <div class="achievement-card glass-card">
+        <div class="achievement-icon"><i class="fa-solid fa-award"></i></div>
+        <span>MERN Stack Completed</span>
+      </div>
+      <div class="achievement-card glass-card">
+        <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+        <span>Completed DSA in JAVA</span>
+      </div>
+      <div class="achievement-card glass-card">
+        <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+        <span>LeetCode 50 Days Badge</span>
+      </div>
+      <div class="achievement-card glass-card">
+        <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+        <span>Tata GenAI Powered Data Analytics Job Simulation</span>
+      </div>
+      <div class="achievement-card glass-card">
+        <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+        <span>AI Tools & ChatGPT Workshop by be10x! </span>
+      </div>
+      </div>
   </section>
 
-  
-  <section id="contact" class="contact-section">
-    <h2>Contact</h2>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <h2 class="section-title"><i class="fa-solid fa-envelope"></i> Contact</h2>
     <div class="contact-container">
-      <a href="tel:+918149774340"><i class="fa-solid fa-phone"></i>+91 8149774340</a>
-      <a href="mailto:chaitanyabhorde56@gmail.com" class="contact-link">
+      <a href="tel:+91 7028887265" class="contact-card glass-card">
+        <i class="fa-solid fa-phone"></i>
+        <span>+91 7028887265</span>
+      </a>
+      <a href="mailto:irfansayyad3505@gmail.com" class="contact-card glass-card">
         <i class="fa-solid fa-envelope"></i>
-        chaitanyabhorde56@gmail.com
+        <span>irfansayyad3505@gmail.com</span>
       </a>
-      <a href="https://www.linkedin.com/in/chaitanya-bhorde-15121a321/" target="_blank" class="contact-link">
-        <i class="fa-brands fa-linkedin"></i>LinkedIn
+      <a href="www.linkedin.com/in/irfan-sayyad-b3589b3a9" target="_blank" class="contact-card glass-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
       </a>
-      <a href="https://github.com/Chaitanya-Bhorde" target="_blank" class="contact-link">
-        <i class="fa-brands fa-github"></i>GitHub
+      <a href=" https://github.com/Irfansayyad011" target="_blank" class="contact-card glass-card">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
       </a>
-      <a href="https://leetcode.com/u/chaitanya_bhorde/" target="_blank" class="contact-link">
-        <i class="fa-solid fa-code"></i>LeetCode
+      <a href="https://leetcode.com/u/irfanS11/" target="_blank" class="contact-card glass-card">
+        <i class="fa-solid fa-code"></i>
+        <span>LeetCode</span>
       </a>
     </div>
   </section>
 
-</div>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>IS<span class="logo-bracket"> /&gt;</span>
+      </div>
+      <div class="footer-socials">
+        <a href="www.linkedin.com/in/irfan-sayyad-b3589b3a9" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href=" https://github.com/Irfansayyad011" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://leetcode.com/u/irfanS11/" target="_blank" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+        <a href="mailto:irfansayyad3505@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-text">&copy; 2026  Irfab Sayyad. All rights reserved.</p>
+    </div>
+  </footer>
 
-<footer>
-  &copy; 2026 Chaitanya Bhorde. All rights reserved.
-</footer>
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
